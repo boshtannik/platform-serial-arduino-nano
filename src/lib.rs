@@ -15,16 +15,16 @@ static GLOBAL_SERIAL: Mutex<RefCell<Option<Usart>>> = Mutex::new(RefCell::new(No
 
 pub struct ArduinoNanoSerial;
 
-impl ArduinoNanoSerial {
-    pub fn new() -> Self {
-        Self {}
-    }
-}
-
 pub fn init_serial(usart: Usart) {
     avr_device::interrupt::free(|cs| {
         GLOBAL_SERIAL.borrow(cs).replace(Some(usart));
     });
+}
+
+impl core::default::Default for ArduinoNanoSerial {
+    fn default() -> Self {
+        Self
+    }
 }
 
 impl embedded_hal::serial::Read<u8> for ArduinoNanoSerial {

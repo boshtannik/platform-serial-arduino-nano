@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 ufmt = "0.1.0"
-platform-serial = { path = "../platform-serial" }
+platform-serial = { git = "https://github.com/boshtannik/platform-serial.git" }
 avr-device = "0.5.3"
 embedded-hal = "0.2.7"
 nb = "1.1.0"
