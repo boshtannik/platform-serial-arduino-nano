@@ -122,6 +122,7 @@ checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
 [[package]]
 name = "platform-serial"
 version = "0.1.0"
+source = "git+https://github.com/boshtannik/platform-serial.git#2f941e132841ec404ecb45ae84176b54ef4f341b"
 dependencies = [
  "embedded-hal",
  "nb 1.1.0",
