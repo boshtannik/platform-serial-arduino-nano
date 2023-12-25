@@ -11,7 +11,7 @@ use nb;
 pub use platform_serial::PlatformSerial;
 
 type Usart = arduino_hal::hal::usart::Usart0<arduino_hal::DefaultClock>;
-static GLOBAL_SERIAL: Mutex<RefCell<Option<Usart>>> = Mutex::new(RefCell::new(None));
+pub static GLOBAL_SERIAL: Mutex<RefCell<Option<Usart>>> = Mutex::new(RefCell::new(None));
 
 pub struct ArduinoNanoSerial;
 
