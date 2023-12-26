@@ -15,5 +15,5 @@ void = { version = "1.0.2", default-features = false }
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
-rev = "190f2c3cb8d29e10f71119352b912369dc5a1fb7"
+rev = "7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
 features = ["arduino-nano"]
