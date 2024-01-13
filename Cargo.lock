@@ -5,7 +5,7 @@ version = 3
 [[package]]
 name = "arduino-hal"
 version = "0.1.0"
-source = "git+https://github.com/rahix/avr-hal?rev=190f2c3cb8d29e10f71119352b912369dc5a1fb7#190f2c3cb8d29e10f71119352b912369dc5a1fb7"
+source = "git+https://github.com/rahix/avr-hal?rev=7dfa6d322b9df98b2d98afe0e14a97afe0187ac1#7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
 dependencies = [
  "atmega-hal",
  "avr-device",
@@ -19,7 +19,7 @@ dependencies = [
 [[package]]
 name = "atmega-hal"
 version = "0.1.0"
-source = "git+https://github.com/rahix/avr-hal?rev=190f2c3cb8d29e10f71119352b912369dc5a1fb7#190f2c3cb8d29e10f71119352b912369dc5a1fb7"
+source = "git+https://github.com/rahix/avr-hal?rev=7dfa6d322b9df98b2d98afe0e14a97afe0187ac1#7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
 dependencies = [
  "avr-device",
  "avr-hal-generic",
@@ -51,7 +51,7 @@ dependencies = [
 [[package]]
 name = "avr-hal-generic"
 version = "0.1.0"
-source = "git+https://github.com/rahix/avr-hal?rev=190f2c3cb8d29e10f71119352b912369dc5a1fb7#190f2c3cb8d29e10f71119352b912369dc5a1fb7"
+source = "git+https://github.com/rahix/avr-hal?rev=7dfa6d322b9df98b2d98afe0e14a97afe0187ac1#7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
 dependencies = [
  "avr-device",
  "cfg-if 0.1.10",
@@ -121,8 +121,7 @@ checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
 
 [[package]]
 name = "platform-serial"
-version = "0.1.0"
-source = "git+https://github.com/boshtannik/platform-serial.git#2f941e132841ec404ecb45ae84176b54ef4f341b"
+version = "1.0.0"
 dependencies = [
  "embedded-hal",
  "nb 1.1.0",
@@ -130,7 +129,7 @@ dependencies = [
 
 [[package]]
 name = "platform-serial-arduino-nano"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "arduino-hal",
  "avr-device",
